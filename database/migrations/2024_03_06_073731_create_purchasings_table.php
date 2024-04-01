@@ -13,6 +13,7 @@ return new class extends Migration
     {
         Schema::create('purchasings', function (Blueprint $table) {
             $table->id();
+            $table->bigInteger('purchase_id');
             $table->bigInteger('vendor_id');
             $table->bigInteger('admin_id');
             $table->date('purchase_date');

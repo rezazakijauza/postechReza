@@ -13,6 +13,7 @@ return new class extends Migration
     {
         Schema::create('sellings', function (Blueprint $table) {
             $table->id();
+            $table->bigInteger('sell_id');
             $table->bigInteger('costumer_id');
             $table->bigInteger('cashier_id');
             $table->date('sell_date');
